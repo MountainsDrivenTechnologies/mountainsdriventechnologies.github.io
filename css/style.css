@@ -45,7 +45,7 @@ body { font-family: 'Livvic', sans-serif !important; }
 .theme-btn { text-decoration: none; font-size: 18px; color: #fff; background-size: 100% 200%!important; background-image: linear-gradient(to bottom, #1a2e35 50%, #5cc42e 50%)!important; transition: background-position .4s ease-in-out, color .4s ease-in-out!important; background-position: 0% 0%!important; padding: 14px 35px; border-radius: 10px; font-weight: 500; letter-spacing: 0.5px; }
 .theme-btn:hover { color: #fff; text-decoration: none; background-size: 100% 200%!important; background-image: linear-gradient(to bottom, #5cc42e 50%, #1a2e35 50%)!important; background-position: 0 100%!important; }
  
-
+.testimonial-title-wrapper { padding: 40px 15px; } 
 .we-are-best-wrapper { padding: 100px 15px; } 
 .we-are-best-wrapper h4 + h3 { padding-bottom: 50px !important; } 
 .we-are-best-wrapper .we-best-inner { display: flex; justify-content: space-between; } 
