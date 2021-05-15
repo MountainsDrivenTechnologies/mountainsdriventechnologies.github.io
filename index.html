@@ -52,9 +52,6 @@
             <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#career">Career</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#testimonial">Testimonial</a>
           </li>
           <li class="nav-item">
@@ -66,7 +63,7 @@
   </div>
 </nav>
 
-<section class="main-banner container-fluid" id="home">
+<section class="page-section main-banner container-fluid" id="home">
   <div class="ast-container">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-xs-12 banner-text fade-up" data-aos="fade-up"data-aos-duration="3000" >
@@ -83,7 +80,7 @@
   </div>
 </section>
 
-<section class="container-fluid we-are-best-wrapper text-center" id="services">
+<section class="page-section container-fluid we-are-best-wrapper text-center" id="services">
  <div class="ast-container">
    <div class="row">
      <div class="col-lg-12">
@@ -304,7 +301,7 @@
 
 
 <!--  About Section  -->
-<section class="container-fluid about-section" id="about">
+<section class="page-section container-fluid about-section" id="about">
   <div class="ast-container">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-xs-12" data-aos="zoom-in" data-aos-duration="1500">
@@ -364,7 +361,7 @@
 
 
 <!--  Counter Section  -->
-<section class="counter-section container-fluid" id="career">
+<section class="page-section counter-section container-fluid" id="career">
   <div class="ast-container">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-xs-12 inner-counter" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">
@@ -393,7 +390,7 @@
 </section>
 
 <!-- Testimonial Section  -->
-<section class="container-fluid testimonial-title-wrapper text-center" id="testimonial">
+<section class="page-section container-fluid testimonial-title-wrapper text-center" id="testimonial">
  <div class="ast-container">
 	   <div class="row">
 		 <div class="col-lg-12">
@@ -405,7 +402,7 @@
 </div>
 </section>
 <section class="spacer container-fluid" id="testimonial-list">
-<div class="ast-container">
+  <div class="ast-container">
   <div class="testimonial-section">
     <div class="testi-user-img">
       <div class="swiper-container gallery-thumbs" data-aos="fade-up" data-aos-duration="2500">
@@ -482,7 +479,6 @@
 
       </div>
     </div>
-  </div>
   </div>
 </section>
 
@@ -604,7 +600,7 @@
               <li><a href="#services">Services</a></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#">Gallery</a></li>
-              <li><a href="#">Career</a></li>
+              <li><a class="nav-link" href="#testimonial">Testimonial</a></li>
               <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
@@ -615,11 +611,11 @@
 
           <div class="social-media w-100 text-center">
             <ul>
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.facebook.com/MountainsDriven-Technologies-104586745149960"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com/mountainsdriventechnologies/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://twitter.com/MountDrivenTech"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCW76aj7ZwdzMQSotjYo8OIQ/featured"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/mountainsdriven-technologies-0b5693212/"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
           </div>
 
@@ -640,12 +636,51 @@
 </script>
 
 <script type="text/javascript">
-  $(document).ready(function(){
-    $(".nav-menu ul.navbar-nav li").click(function(){
-        $('.nav-menu ul.navbar-nav li').removeClass("active");
-    $(this).addClass("active");
-    });
-  });
+  // $(document).ready(function(){
+  //   $(".nav-menu ul.navbar-nav li").click(function(){
+  //       $('.nav-menu ul.navbar-nav li').removeClass("active");
+  //   $(this).addClass("active");
+  //   });
+  // });
+
+  //START ON SCROLL ACTIVE MENU LINK
+  $(document).ready(function() {
+		$('a[href*=#]').bind('click', function(e) {
+				e.preventDefault(); // prevent hard jump, the default behavior
+
+				var target = $(this).attr("href"); // Set the target as variable
+
+				// perform animated scrolling by getting top-position of target-element and set it as scroll target
+				$('html, body').stop().animate({
+						scrollTop: $(target).offset().top
+				}, 600, function() {
+						location.hash = target; //attach the hash (#jumptarget) to the pageurl
+				});
+
+				return false;
+		});
+});
+
+$(window).scroll(function() {
+		var scrollDistance = $(window).scrollTop();
+
+		// Show/hide menu on scroll
+		//if (scrollDistance >= 850) {
+		//		$('nav').fadeIn("fast");
+		//} else {
+		//		$('nav').fadeOut("fast");
+		//}
+	
+		// Assign active class to nav links while scolling
+		$('.page-section').each(function(i) {
+				if ($(this).position().top <= scrollDistance) {
+						$('.navbar-nav li.active').removeClass('active');
+						$('.navbar-nav li').eq(i).addClass('active');
+				}
+		});
+}).scroll();
+  //END ON SCROLL ACTIVE MENU LINK
+
   var galleryThumbs = new Swiper('.gallery-thumbs', {
     effect: 'coverflow',
     grabCursor: true,
