@@ -3,27 +3,22 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8">
-  <meta name="description"
-    content="MountainsDriven Technologies is a leading software firm wih advance and customized solution provider firm with the team of highly experience and expert team members">
+  <meta name="description" content="MountainsDriven Technologies is a leading software firm wih advance and customized solution provider firm with the team of highly experience and expert team members">
   <meta name="keywords" content="HTML, CSS, JavaScript,Software solution, Website Development,App Development">
   <meta name="author" content="MountainsDriven Technologies">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <!-- Bootstrap CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+  <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
   <!--testimonial region-->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.toast.css" >
   <!--testimonial endregion-->
-
   <title>Mountains Driven Technologies</title>
   <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
 
@@ -383,6 +378,7 @@
             </div>
           </div>
         </div>
+		<div id="id01"></div>
       </div>
     </div>
   </div>
@@ -406,31 +402,23 @@
   <div class="testimonial-section">
     <div class="testi-user-img">
       <div class="swiper-container gallery-thumbs" data-aos="fade-up" data-aos-duration="2500">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img class="u3" src="https://md-aqil.github.io/images/2091127763_1_1_1.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
+        <div class="swiper-wrapper"id="Imgslide">
+          <!-- <div class="swiper-slide" >
             <img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img class="u2" src="https://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img class="u4" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-          </div>
+          </div>  -->
         </div>
       </div>
     </div>
     <div class="user-saying" data-aos="fade-down" data-aos-duration="2500">
       <div class="swiper-container testimonial">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper ">
-          <div class="swiper-slide">
+        <div class="swiper-wrapper" id="Quotes">
+          
+          <!-- <div class="swiper-slide">
             <div class="quote">
               <img class="quote-icon" src="images/quote.png" alt="">
               <p>
-                “MountainsDriven Technologies is awesome at service providing ,instant online solution and app customization. The team helped me to boost the business in meantime by providing solution on prior and they took care of it right away.“
+                �MountainsDriven Technologies is awesome at service providing ,instant online solution and app customization. The team helped me to boost the business in meantime by providing solution on prior and they took care of it right away.�
               </p>
               <div class="name">-P. Khadawala-</div>
               <div class="designation">Car Business Owner</div>
@@ -440,9 +428,9 @@
             <div class="quote">
               <img class="quote-icon" src="images/quote.png" alt="">
               <p>
-                “This is best and biggest unified platform
+                �This is best and biggest unified platform
                 for instant online admission. We can easily
-                take admission for any course in any institute..“
+                take admission for any course in any institute..�
               </p>
               <div class="name">-Ramkishor Verma-</div>
               <div class="designation">University Student</div>
@@ -454,7 +442,7 @@
               <p>
                 This is best and biggest unified platform
                 for instant online admission. We can easily
-                take admission for any course in any institute..“
+                take admission for any course in any institute..�
               </p>
               <div class="name">-Ramkishor Verma-</div>
               <div class="designation">University Student</div>
@@ -466,13 +454,12 @@
               <p>
                 This is best and biggest unified platform
                 for instant online admission. We can easily
-                take admission for any course in any institute..“
+                take admission for any course in any institute..�
               </p>
               <div class="name">-Ramkishor Verma-</div>
               <div class="designation">University Student</div>
             </div>
-          </div>
-
+          </div> -->
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination swiper-pagination-white"></div>
@@ -535,31 +522,33 @@
   <div class="col-lg-7 col-md-7 col-xs-12 pr-0" data-aos="fade-up"data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
    <div class="contact-form">
      <h4 class="sub-title">LET'S TALK</h4>
-     <h3 class="main-title">Fill The Form Below</h3>
-     <form>
+     <h3 class="main-title">Fill The Form</h3>
+     <form name="contactus" id="contactus" method="post">
       <div class="row">
         <div class="col">
-          <input type="text" class="form-control" placeholder="Name">
+          <input type="text" id="Name" name="Name" class="form-control" placeholder="Name">
         </div>
         <div class="col">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" id="Email" name="Email" class="form-control" placeholder="Email">
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <input type="number" class="form-control" placeholder="Phone Number">
+		  <input type="text" id="Phone" name="Phone" class="form-control" placeholder="Phone Number(i.e. +x xxx xxx xxxx)" maxlength="15" onkeypress="return isNumberKey(this)">
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Website">
+          <input type="text" id="Website" name="Website" class="form-control" placeholder="Website">
         </div>
       </div>
       <div class="row area">
        <div class="col">
-        <textarea type="text" class="form-control" placeholder="Message"></textarea>
+        <textarea type="text" id="Message" name="Message" class="form-control" placeholder="Message"></textarea>
       </div>
     </div>
-    <a href="#" class="theme-btn">Contact us</a>
+<button type="button"  id="btnSubmit" class="theme-btn">Contact us</button>
 </form>
+  </div>
+</div>
 </div>
 </div>
 </div>
@@ -625,52 +614,106 @@
   </div>
   
 </footer>
-	<script src="https://md-aqil.github.io/images/swiper.min.js"></script>
+<script src="https://md-aqil.github.io/images/swiper.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+<script src="js/jquery.toast.js"></script>
 <script>
   AOS.init();
 </script>
-
 <script type="text/javascript">
-  // $(document).ready(function(){
-  //   $(".nav-menu ul.navbar-nav li").click(function(){
-  //       $('.nav-menu ul.navbar-nav li').removeClass("active");
-  //   $(this).addClass("active");
-  //   });
-  // });
+if (location.protocol !== 'https:' && !location.protocol.includes('file')) {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+}
+  $("#btnSubmit").click(function (e) {
+    var form_data = $("#contactus").serialize();
+    try {
+      $.ajax({
+        url: "mail.php",
+        method: "POST",
+        data: form_data,
+        success: function (data) {
+          $.toast({
+            heading: 'Information',
+            text: 'Thank you for connecting. We will get back to you soon.',
+            icon: 'info',
+            loader: true,        // Change it to false to disable loader
+            loaderBg: '#9EC600'  // To change the background
+          });
+          $("#contactus").trigger("reset");
+        },
+        error: function (error) {
+          $.toast({
+            heading: 'Error',
+            text: 'something went wrong please try again or reach out on <a href="mailto:info@zoobytech.com">info@zoobytech.com</a>',
+            showHideTransition: 'fade',
+            icon: 'error'
+          });
+        }
+      })
+    } catch (error) {
 
+    }
+  });
+var isTestimonialSet = false;
   //START ON SCROLL ACTIVE MENU LINK
-  $(document).ready(function() {
-		$('a[href*=#]').bind('click', function(e) {
-				e.preventDefault(); // prevent hard jump, the default behavior
+  $(document).ready(function(){
+    var div = $('#Quotes');
+    var div2 = $('#Imgslide');
+     $.getJSON("js/portfolio.json", 
+          function (data) {
+            console.log(data);
+          $(data).each(function(i, item){
+            div.append('<div class="swiper-slide"><div class="quote"><img class="quote-icon" src="images/quote.png" alt=""><p>"' + item.Comment + '"</p><div class="name">'  + item.ClientName + '</div><div class="designation"><a href="'+  item.WebsiteUrl+'">'+ item.WebsiteUrl+'</a></div></div></div>');
+            div2.append('<div class="swiper-slide" ><img class="u1" src="'+ item.ImageUrl +'" alt=""></div>');
+          });
+			});
+//MANAGE TESTIMONIAL UI
+    setInterval(() => {
+      if(isTestimonialSet == false){
+        isTestimonialSet=true;
+      var galleryThumbs = new Swiper('.gallery-thumbs', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: '2',
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 50,
+          modifier: 6,
+          slideShadows: false,
+        },
+      });
+      var galleryTop = new Swiper('.swiper-container.testimonial', {
+        speed: 400,
+        spaceBetween: 50,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        direction: 'vertical',
+        pagination: {
+          clickable: true,
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+        thumbs: {
+          swiper: galleryThumbs
+        }
+      });
+      }
+    }, 1000);
+//MANAGE TESTIMONIAL UI
 
-				var target = $(this).attr("href"); // Set the target as variable
 
-				// perform animated scrolling by getting top-position of target-element and set it as scroll target
-				$('html, body').stop().animate({
-						scrollTop: $(target).offset().top
-				}, 600, function() {
-						location.hash = target; //attach the hash (#jumptarget) to the pageurl
-				});
-
-				return false;
-		});
-});
-
+  });
 $(window).scroll(function() {
 		var scrollDistance = $(window).scrollTop();
-
-		// Show/hide menu on scroll
-		//if (scrollDistance >= 850) {
-		//		$('nav').fadeIn("fast");
-		//} else {
-		//		$('nav').fadeOut("fast");
-		//}
-	
-		// Assign active class to nav links while scolling
+    // Assign active class to nav links while scolling
 		$('.page-section').each(function(i) {
 				if ($(this).position().top <= scrollDistance) {
 						$('.navbar-nav li.active').removeClass('active');
@@ -678,50 +721,14 @@ $(window).scroll(function() {
 				}
 		});
 }).scroll();
+function isNumberKey(evt)
+{
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode != 43 && charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+    return true;
+}
   //END ON SCROLL ACTIVE MENU LINK
-
-  var galleryThumbs = new Swiper('.gallery-thumbs', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: '2',
-  // coverflowEffect: {
-  //   rotate: 50,
-  //   stretch: 0,
-  //   depth: 100,
-  //   modifier: 1,
-  //   slideShadows : true,
-  // },
-     
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 50,
-    modifier: 6,
-    slideShadows : false,
-  },
-    });
-  var galleryTop = new Swiper('.swiper-container.testimonial', {
-    speed: 400,
-    spaceBetween: 50,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    direction: 'vertical',
-    pagination: {
-      clickable: true,
-      el: '.swiper-pagination',
-      type: 'bullets',
-    },
-    thumbs: {
-      swiper: galleryThumbs
-    }
-});
-
-
 </script>
-
-
 </body>
 </html>
